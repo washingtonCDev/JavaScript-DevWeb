@@ -1,0 +1,79 @@
+/* Reset básico para margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e alinhamento */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f3f3f3, #e3e3e3);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Botão com efeito inflável */
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.4);
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

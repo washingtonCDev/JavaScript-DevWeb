@@ -1,0 +1,14 @@
+.estilo1{
+background: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+}
+
+.estilo2{
+width: 400px;
+height: 50px;
+background-color: #ff0000;
+text-align: center;
+font-size: 25px;
+color: #fff;
+padding: 25px;
+}
